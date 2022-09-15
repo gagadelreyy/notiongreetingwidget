@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Neonderthaw&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,9 +40,9 @@ h1 {
 .card {
     padding: 1px 60px 1px 60px;
     border-radius: 6px;
-    background: #FAE9E6;
+    background: #F79BC7;
     width: 85vw;
-    color: #AEBD8C;
+    color: #40A875;
     display: inline-block;
 }
 
@@ -53,7 +53,7 @@ h1 {
 
 .clock {
     display: inline;
-    font-family: 'Gaegu', cursive;
+    font-family: 'BioRhyme', cursive;
     font-size: 1.7em;
    
 }
@@ -78,14 +78,14 @@ h1 {
 .date {
     display: inline;
     min-width: 162px;
-    font-family: 'Gaegu', cursive;
+    font-family: 'BioRhyme', cursive;
     font-size: 1.7em;
     padding-right: 20px;
 }
 .greet{
     
     display:inline;
-    font-family: 'Gaegu', cursive;
+    font-family: 'BioRhyme', cursive;
     font-size: 1.7rem;
      padding-right: 20px;
 }
@@ -101,7 +101,7 @@ h1 {
     <div class="card">
         <div class="greet" id="greet"></div>
       <div class="date" id="date"></div>
-      <div class="emoji">❤</div>
+      <div class="emoji">💖</div>
       <div class="clock">
         <div class="time" id="hour"></div>
         <div class="colon">:</div>
@@ -124,16 +124,16 @@ var today = new Date();
 var hour = zeros(twelveHour(today.getHours()));
 var minutes = zeros(today.getMinutes());
 if(today.getHours() >=12){
-    minutes+=" pm"
+    minutes+=" PM"
 }
 else{
-    minutes+=" am"
+    minutes+=" AM"
 }
 hrs = today.getHours();
 if (hrs < 12)
-        greet = '☀ good morning mag ☀';
+        greet = '☀️ good morning mag ☀️';
     else if (hrs >= 12 && hrs <= 17)
-        greet = '☁ good afternoon mag ☁';
+        greet = '☁️ good afternoon mag ☁️';
     else if (hrs >= 17 && hrs <= 24)
         greet = '☽ good evening ☾';
 // console.log(today.toLocaleTimeString());
